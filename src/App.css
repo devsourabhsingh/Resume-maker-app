@@ -1,38 +1,243 @@
-.App {
-  text-align: center;
-}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:ital,wght@0,700;1,600&display=swap");
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Montserrat:wght@300&display=swap");
+.heading-maker h1 {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-family: "Cinzel", serif;
+}
+.new-form {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
+}
+.new-second-input-email {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
+}
+.input-differ {
+  padding: 10px 10px;
+}
+.two-form-set {
+  display: grid;
+  grid-template-columns: auto;
+  padding: 10px;
+}
+.third-form-set {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px 15px 10px 15px;
+}
+.fourth-form-set {
+  display: flex;
+  align-items: flex-end;
+}
+.fifth-form-set {
+  display: grid;
+  grid-template-columns: auto;
+  padding: 10px 15px 10px 15px;
+}
+.sixth-form-set {
+  display: grid;
+  grid-template-columns: auto;
+  padding: 10px;
+}
+.add-del-icon {
+  margin-left: 5px !important;
+  display: inline-flex;
+  vertical-align: bottom;
+}
+.main-form label {
+  display: flex;
+}
+.new-education-input {
+  display: flex;
+  margin-top: 0.2rem;
+  border-radius: 5px;
+  padding: 8px 15px;
+  border: 1px solid grey;
+}
+
+.new-word.btn1 {
+  margin: left;
+}
+.resume-head {
+  display: flex;
+}
+.resume-maker {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-left: 5rem;
+  width: 40%;
+  margin: auto;
+  border-radius: 20px;
+  margin-bottom: 2rem;
+}
+.print-data {
+  width: 50%;
+}
+.print-data button {
+  background-color: red;
+  color: #fff;
+  border: transparent;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-left: 15rem;
+  padding: 7px 10px;
+}
+.form-submit-btn {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 0.8rem;
+}
+.submit-btn {
+  border: none;
+  background-color: blue;
+  color: #fff;
+  padding: 8px 25px;
+  border: transparent;
+}
+
+.main-resume-card {
+  border: 1px solid white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 20px;
+  margin-right: 5rem;
+  margin-top: 0rem;
+}
+
+.resume-header {
+  background: #7979ff;
+  display: flex;
+  border-radius: 20px;
+  border-bottom-right-radius: none;
+  justify-content: space-around;
+  align-items: center;
+  height: 12rem;
+}
+.header-title {
+  color: #fff;
+  text-transform: uppercase;
+  height: 19px;
+}
+.header-image {
+  border-radius: 50%;
+  margin-left: 20px;
+}
+.header-description {
+  width: 500px;
+  color: #fff;
+}
+
+.resume-section {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 200px;
+}
+.education-section {
+  display: grid;
+  grid-template-columns: auto;
+}
+.set-email-phone {
+  display: flex;
+}
+.head-new-address {
   color: white;
+  height: 0;
 }
-
-.App-link {
-  color: #61dafb;
+.head-contact p {
+  color: white;
+  height: 0;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.second-head-summary {
+  display: grid;
+  grid-template-columns: auto;
+}
+.new-list {
+  font-size: 1.5rem;
+  list-style-type: square;
+  color: blue;
+  height: 20px;
+  text-transform: uppercase;
+}
+.about-sumary {
+  padding: 0px 15px 0px 15px;
+}
+.about-sumary p {
+  margin-left: 0.5rem;
+  text-transform: capitalize;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+.about-sumary {
+  word-break: break-word;
+}
+.resume-companyName p {
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  text-transform: capitalize;
+}
+.Skills-list p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.education-list p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.set-new-date {
+  border: 1px solid grey;
+  border-radius: 10px;
+}
+.new-date-set {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 81px;
+}
+.new-date-set input {
+  margin-left: 0.3rem;
+  margin-right: 0.3rem;
+}
+.set-Label {
+  display: flex;
+  justify-content: space-around;
+}
+.new-list-order {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  list-style-type: none;
+}
+.set-middle-para {
+  margin-top: 0;
+}
+.company-list-set {
+  margin-bottom: 0.5rem;
+}
+.date-input {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 81px;
+  margin-bottom: 0.5rem;
+}
+.label-set {
+  display: flex;
+  justify-content: space-around;
+}
+.add-icon {
+  color: green;
+}
+.delete-icon {
+  color: red;
+}
+.company-designation {
+  margin-bottom: 1rem;
+  list-style-type: none;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
 }
