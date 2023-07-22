@@ -152,7 +152,7 @@ const Resume = () => {
                   name="name"
                   value={newValue.name}
                   type="text"
-                  placeholder="Enter Your Name"
+                  placeholder="Enter your name"
                   onChange={handleChange}
                 />
                 {errors.name && <p style={{ color: "red" }}>{errors.name}</p>}
@@ -181,7 +181,7 @@ const Resume = () => {
                   type="text"
                   name="email"
                   value={newValue.email}
-                  placeholder="Enter Your Email"
+                  placeholder="Enter your email"
                   onChange={handleChange}
                 />
                 {errors.email && <p style={{ color: "red" }}>{errors.email}</p>}
@@ -193,7 +193,7 @@ const Resume = () => {
                   type="number"
                   name="Phone"
                   value={newValue.Phone}
-                  placeholder="Enter Your Phone"
+                  placeholder="Enter your phone"
                   onChange={handleChange}
                 />
                 {errors.Phone && <p style={{ color: "red" }}>{errors.Phone}</p>}
@@ -206,7 +206,7 @@ const Resume = () => {
                   className="new-education-input"
                   name="addresses"
                   value={newValue.addresses}
-                  placeholder="Enter Your Addresses"
+                  placeholder="Enter your address"
                   onChange={handleChange}
                   cols="50"
                   rows="4"
@@ -224,7 +224,7 @@ const Resume = () => {
                   className="new-education-input"
                   name="professionalSummary"
                   value={newValue.professionalSummary}
-                  placeholder="Enter Your Professional Summary"
+                  placeholder="Enter your professional summary"
                   onChange={handleChange}
                   cols="50"
                   rows="4"
@@ -245,7 +245,7 @@ const Resume = () => {
                         type="text"
                         name="education"
                         value={element.education}
-                        placeholder="Enter Your qualification "
+                        placeholder="Enter your qualification "
                         onChange={(e) => handleChangeEducation(index, e)}
                       />
                     ))}
@@ -277,7 +277,7 @@ const Resume = () => {
                         name="skills"
                         className="new-education-input"
                         value={element.skills}
-                        placeholder="Enter Your  skills"
+                        placeholder="Enter your  skills"
                         onChange={(e) => handleChangeSkills(index, e)}
                       />
                     ))}
@@ -314,7 +314,7 @@ const Resume = () => {
                               name="companyName"
                               className="new-education-input"
                               value={element.companyName}
-                              placeholder="Enter Your Company Name"
+                              placeholder="Enter your company name"
                               onChange={(e) =>
                                 handleChangeCompanyName(index, e)
                               }
@@ -332,7 +332,7 @@ const Resume = () => {
                               className="new-education-input"
                               name="designation"
                               value={element.designation}
-                              placeholder="entetr Your designation"
+                              placeholder="Enter your designation"
                               onChange={(e) =>
                                 handleChangeCompanyName(index, e)
                               }
@@ -360,36 +360,38 @@ const Resume = () => {
                               <p style={{ color: "red" }}>{errors.from}</p>
                             )}
                           </div>
-                          <div>
-                            <label htmlFor="">To</label>
-                            <input
-                              type="date"
-                              name="to"
-                              className="new-education-input"
-                              value={element.to}
-                              onChange={(e) =>
-                                handleChangeCompanyName(index, e)
-                              }
-                            />
-                            {errors.to && (
-                              <p style={{ color: "red" }}>{errors.to}</p>
-                            )}
+                          <div className="date-align">
+                            <div>
+                              <label htmlFor="">To</label>
+                              <input
+                                type="date"
+                                name="to"
+                                className="new-education-input"
+                                value={element.to}
+                                onChange={(e) =>
+                                  handleChangeCompanyName(index, e)
+                                }
+                              />
+                              {errors.to && (
+                                <p style={{ color: "red" }}>{errors.to}</p>
+                              )}
+                            </div>
+                            <div className="add-del-icon">
+                              <AddCircleOutlineIcon
+                                className="add-icon"
+                                onClick={handleAddCompanyName}
+                              />
+                              {newCompanyName?.length > 1 && (
+                                <DeleteForeverOutlinedIcon
+                                  className="delete-icon"
+                                  onClick={handleDeleteCompanyName}
+                                />
+                              )}
+                            </div>
                           </div>
                         </div>
                       </>
                     ))}
-                  </div>
-                  <div className="add-del-icon">
-                    <AddCircleOutlineIcon
-                      className="add-icon"
-                      onClick={handleAddCompanyName}
-                    />
-                    {newCompanyName?.length > 1 && (
-                      <DeleteForeverOutlinedIcon
-                        className="delete-icon"
-                        onClick={handleDeleteCompanyName}
-                      />
-                    )}
                   </div>
                 </div>
               </div>
@@ -405,7 +407,7 @@ const Resume = () => {
                         className="new-education-input"
                         name="achievements"
                         value={element.achievements}
-                        placeholder="Enter Your  Achievements"
+                        placeholder="Enter your  achievements"
                         onChange={(e) => handleChangeAchievements(index, e)}
                       />
                     ))}
