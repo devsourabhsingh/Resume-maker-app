@@ -75,9 +75,7 @@
   border-radius: 20px;
   margin-bottom: 2rem;
 }
-.print-data {
-  width: 50%;
-}
+
 .print-data button {
   background-color: red;
   color: #fff;
@@ -98,6 +96,8 @@
   color: #fff;
   padding: 8px 25px;
   border: transparent;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 .main-resume-card {
@@ -196,11 +196,12 @@
 .new-date-set {
   display: grid;
   grid-template-columns: auto auto;
-  column-gap: 81px;
+  column-gap: 41px;
 }
 .new-date-set input {
   margin-left: 0.3rem;
   margin-right: 0.3rem;
+  margin-top: 1.2rem;
 }
 .set-Label {
   display: flex;
@@ -221,7 +222,13 @@
   display: grid;
   grid-template-columns: auto auto;
   column-gap: 81px;
-  margin-bottom: 0.5rem;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.date-align {
+  display: flex;
+  justify-content: center;
+  align-items: end;
 }
 .label-set {
   display: flex;

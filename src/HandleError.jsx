@@ -7,41 +7,41 @@ const handleerrors = (
 ) => {
   const errors = {};
   if (newValue.name === "") {
-    errors.name = "name is required";
+    errors.name = "Name is required";
   }
   if (newValue.email === "") {
-    errors.email = "email is required";
+    errors.email = "Email is required";
   }
   if (newValue.addresses === "") {
-    errors.addresses = "address is required";
+    errors.addresses = "Address is required";
   }
   if (newValue.Phone === "") {
-    errors.Phone = "phone is required";
+    errors.Phone = "Phone is required";
   }
   if (newValue.professionalSummary === "") {
-    errors.professionalSummary = "professional Summary is required";
+    errors.professionalSummary = "Professional Summary is required";
   }
 
   if (newEducation[0]?.education === "") {
-    errors.education = "education is  required";
+    errors.education = "Education is  required";
   }
   if (newSkills[0]?.skills === "") {
-    errors.skills = "skills is required";
+    errors.skills = "Skills is required";
   }
   if (newCompanyName[0]?.companyName === "") {
     errors.companyName = "Company name is required";
   }
   if (newCompanyName[0]?.designation === "") {
-    errors.designation = "designation is required";
+    errors.designation = "Designation is required";
   }
   if (newCompanyName[0]?.from === "") {
-    errors.from = "from date is required";
+    errors.from = "From date is required";
   }
   if (newCompanyName[0]?.to === "") {
-    errors.to = " to date is required";
+    errors.to = "To date is required";
   }
   if (newAchievement[0]?.achievements === "") {
-    errors.achievements = "achievements is required";
+    errors.achievements = "Achievements is required";
   }
 
   return errors;
